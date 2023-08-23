@@ -5,17 +5,16 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class TestController {
+public class Test2Controller {
 
     @GetMapping
     @ResponseBody
     public String hello1(String name) {
-        return "hello1 : " + name;
+        if (name.startsWith("hucheng")) {
+            return "hello!!!  hucheng";
+        } else {
+            return "sorry!!!  hucheng";
+        }
     }
 
-    @GetMapping
-    @ResponseBody
-    public String hello2(String name) {
-        return "hello2 : " + name;
-    }
 }
