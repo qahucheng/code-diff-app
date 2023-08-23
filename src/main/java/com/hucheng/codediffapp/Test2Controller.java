@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class Test2Controller {
 
-    @GetMapping
+    @GetMapping("test2/hello")
     @ResponseBody
-    public String hello1(String name) {
+    public String hello(String name) {
         if (name.startsWith("hucheng")) {
             return "hello!!!  hucheng";
         } else {
