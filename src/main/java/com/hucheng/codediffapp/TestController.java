@@ -16,7 +16,10 @@ public class TestController {
     @GetMapping("test1/hello2")
     @ResponseBody
     public String hello2(String name) {
-        System.out.println("123123123123");
-        return name + "hello2.6 : " + name;
+        if (name.startsWith("hucheng")) {
+            return "hello2!!!  hucheng";
+        } else {
+            return "sorry2!!!  hucheng";
+        }
     }
 }
