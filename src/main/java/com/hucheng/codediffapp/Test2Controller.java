@@ -10,6 +10,9 @@ public class Test2Controller {
     @GetMapping("test2/hello")
     @ResponseBody
     public String hello(String name) {
+        if (name.startsWith("chenghu")){
+            return "thanks!!!  hucheng";
+        }
         if (name.startsWith("hucheng")) {
             return "hello!!!  hucheng";
         } else {
