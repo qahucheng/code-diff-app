@@ -13,10 +13,10 @@ public class Test2Controller {
         if (name.startsWith("chenghu")){
             return "thanks!!!  hucheng";
         }
-        if (name.startsWith("hucheng")) {
-            return "hello!!!  hucheng";
+        if (name.startsWith("hucheng1995")) {
+            return "hello!!!  hucheng1995";
         } else {
-            return "sorry!!!  hucheng";
+            return "sorry!!!  hucheng1995";
         }
     }
 
