@@ -17,9 +17,9 @@ public class Test2Controller {
         }
     }
 
-    @GetMapping("test2/hello2")
+    @GetMapping("test2/hello1")
     @ResponseBody
-    public String hello(String name) {
+    public String hello2(String name) {
         if (name.startsWith("chenghu")){
             return "thanks!!!  hucheng";
         }
