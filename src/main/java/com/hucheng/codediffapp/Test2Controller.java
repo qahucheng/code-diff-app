@@ -21,12 +21,12 @@ public class Test2Controller {
     @ResponseBody
     public String hello2(String name) {
         if (name.startsWith("chenghu")){
-            return "thanks!!!  hucheng";
+            return "thanks2.2!!!  hucheng";
         }
         if (name.startsWith("hucheng1995")) {
             return "hello!!!  hucheng1995";
         } 
-        return "default!!!  hucheng1995";
+        return "default2.2!!!  hucheng1995";
         
     }
 
